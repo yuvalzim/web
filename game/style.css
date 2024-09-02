@@ -1,0 +1,94 @@
+#bird {
+    width: 100px;
+    height: auto;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    mix-blend-mode: multiply;
+    -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+}
+
+
+#game_win{
+    
+    background-color: powderblue;
+    width: 55%;
+    height: 85%;
+    outline: 1px solid blue;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    -webkit-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    overflow: hidden;
+}
+
+.obstacle {
+    background-image: url('pipe.png');
+    width: 60px;
+    height: 500px;
+    position: absolute;
+}
+
+.topObstacle {
+    background-image: url('pipe.png');
+    transform: rotate(180deg);
+    width: 60px;
+    height: 500px;
+    position: absolute;
+}
+
+#topScreen{
+    
+    width:100%;
+    display: flex;
+    justify-content: center;
+}
+
+p{
+    font-size: 25px;
+    font-family: "ＭＳ Ｐゴシック";
+    color: rgb(24, 24, 56);
+}
+
+#start{
+    margin: 0;
+    position:relative;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    padding: 2em;  /* Padding relative to font size */
+    font-size: larger;
+    border-radius: 10px;
+    background-color: rgb(68, 84, 236);
+    box-shadow: 0 9px #999;
+    color: white;
+}
+
+#start:hover{
+    cursor: pointer;
+    background-color: rgb(39, 6, 189);
+}
+
+#start:active{
+    box-shadow: 0 5px #999;
+    transform: translate(-50%, calc(-50% + 4px)); /* Adjust translate to match :active effect */
+}
+
+
+.lose{
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+
+#loseDiv{
+    position:relative;
+    left: 25%;
+    width: 50%;
+    background-color: rgb(68, 84, 236);
+    border-radius: 10px;
+}
+
